@@ -1,0 +1,15 @@
+{
+  "npmClient": "yarn",
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]
+    },
+    "publish": {
+      "ignoreChanges": ["*.md", ".gitignore"]
+    }
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent"
+}
