@@ -1,14 +1,16 @@
 {
   "npmClient": "yarn",
+  "useWorkspaces": true,
   "command": {
     "bootstrap": {
       "npmClientArgs": ["--no-package-lock"]
     },
     "publish": {
-      "ignoreChanges": ["*.md", ".gitignore"]
+      "ignoreChanges": ["*.md", ".gitignore", "lerna.json"]
     }
   },
   "packages": [
+    "services/*",
     "packages/*"
   ],
   "version": "independent"

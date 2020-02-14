@@ -1,0 +1,26 @@
+{
+  "name": "@andrew/request-id-middleware",
+  "version": "1.0.0",
+  "description": "express middleware that sets unique id to request",
+  "keywords": [
+    "expressjs",
+    "node.js",
+    "middleware"
+  ],
+  "author": "Andrew Tsybin <tcandrei@bk.ru>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "uuid": "^3.4.0"
+  }
+}

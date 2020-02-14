@@ -1,0 +1,28 @@
+{
+  "name": "simple-express-server",
+  "version": "1.0.0",
+  "description": "simple configured express server with ping",
+  "keywords": [
+    "expressjs",
+    "nodejs"
+  ],
+  "private": true,
+  "author": "Andrew Tsybin <tcandrei@bk.ru>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "@andrew/request-id-middleware": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=12.2.0"
+  }
+}

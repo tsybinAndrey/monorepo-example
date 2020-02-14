@@ -1,7 +1,16 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "lerna": "lerna"
+  },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
     "lerna": "^3.20.2"
-  }
+  },
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ]
 }
