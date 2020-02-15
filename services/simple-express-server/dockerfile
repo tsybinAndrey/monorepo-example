@@ -1,0 +1,22 @@
+FROM node:12.16-alpine
+
+RUN apk update && apk add --no-cache yarn && apk add --no-cache tini
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+COPY yarn.lock ./
+
+RUN yarn install --production
+
+COPY . .
+
+ENV NODE_ENV=production
+
+EXPOSE 3000
+
+USER node
+
+ENTRYPOINT ["/sbin/tini", "--"]
+
+CMD [ "node", "index.js" ]
