@@ -19,8 +19,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "@andrew/request-id-middleware": "^1.0.0"
+    "@tcandrei/request-id-middleware": "^1.0.0",
+    "express": "^4.17.1"
   },
   "engines": {
     "node": ">=12.2.0"
