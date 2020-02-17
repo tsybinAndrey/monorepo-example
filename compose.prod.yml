@@ -1,0 +1,16 @@
+version: '3'
+services: 
+  example_service:
+    environment:
+      NODE_ENV: production
+    ports:
+    - "3000:3000"
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+      resources:
+        limits:
+          memory: 200M

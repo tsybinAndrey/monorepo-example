@@ -1,0 +1,4 @@
+version: '3'
+services: 
+  example_service:
+    image: tcandrei/simple-express-server:latest
