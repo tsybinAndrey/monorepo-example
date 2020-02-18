@@ -1,9 +1,4 @@
 version: '3'
 services: 
   example_service:
-    build:
-      context: .
-      args:
-      - path_to_service=./services/simple_express_server
-    ports:
-    - "3000:3000"
+    image: tcandrei/simple-express-server:latest
