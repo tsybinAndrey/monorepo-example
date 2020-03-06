@@ -9,7 +9,7 @@ RUN apk update && apk add --no-cache yarn && apk add --no-cache tini
 WORKDIR /usr/src/app
 
 COPY ${path_to_service}/package*.json ./
-COPY ${path_to_service}/yarn.lock ./
+COPY yarn.lock ./
 
 RUN yarn install --production
 
