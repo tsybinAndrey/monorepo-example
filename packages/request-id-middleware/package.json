@@ -1,6 +1,6 @@
 {
   "name": "@tcandrei/request-id-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "express middleware that sets unique id to request",
   "keywords": [
     "expressjs",
@@ -26,5 +26,6 @@
   },
   "dependencies": {
     "uuid": "^3.4.0"
-  }
+  },
+  "gitHead": "16bcbbea654854d03c4df0487f37e39d6279292f"
 }
