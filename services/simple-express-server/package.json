@@ -1,6 +1,6 @@
 {
   "name": "simple-express-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "simple configured express server with ping",
   "keywords": [
     "expressjs",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@tcandrei/metrics-middleware": "^1.0.0",
-    "@tcandrei/request-id-middleware": "^1.0.0",
+    "@tcandrei/request-id-middleware": "^1.0.1",
     "express": "^4.17.1"
   },
   "engines": {
