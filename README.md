@@ -30,3 +30,19 @@ Build & run all services via docker compose.
 ```
 docker-compose up
 ```
+
+### Possible CI version bump and docker build flow
+
+Commands below can be used to bump versions for updated packages, publish it to npm
+and create docker images only for changes API's in monorepo with lerna
+
+```
+yarn lerna changed --all
+yarn lerna version patch --yes
+yarn lerna publish from-package --yes
+
+docker build -t $CONTAINER_NAME:latest \
+  --build-arg path_to_service=services/simple-express-server  .
+
+docker push $CONTAINER_NAME:latest
+```
