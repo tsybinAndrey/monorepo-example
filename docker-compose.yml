@@ -1,4 +1,21 @@
-version: '3'
+version: '3.7'
 services: 
   example_service:
     image: tcandrei/simple-express-server:latest
+    ports: 
+      - "3000:3000"
+    networks:
+      - monorepo
+    deploy:
+      mode: replicated
+      replicas: 6
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+      restart_policy:
+        condition: on-failure
+networks: 
+  monorepo:
+    driver: overlay

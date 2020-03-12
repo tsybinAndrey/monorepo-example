@@ -1,6 +1,6 @@
 {
   "name": "@tcandrei/request-id-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "express middleware that sets unique id to request",
   "keywords": [
     "expressjs",

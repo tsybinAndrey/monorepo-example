@@ -1,6 +1,6 @@
 {
   "name": "simple-express-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "simple configured express server with ping",
   "keywords": [
     "expressjs",
@@ -19,8 +19,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@tcandrei/metrics-middleware": "^1.0.0",
-    "@tcandrei/request-id-middleware": "^1.0.1",
+    "@tcandrei/metrics-middleware": "^1.0.1",
+    "@tcandrei/request-id-middleware": "^1.0.2",
     "express": "^4.17.1"
   },
   "engines": {
