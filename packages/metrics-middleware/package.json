@@ -1,6 +1,6 @@
 {
   "name": "@tcandrei/metrics-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "prometheus metrics middleware",
   "author": "Andrew Tsybin <tcandrei@bk.ru>",
   "homepage": "https://github.com/tsybinAndrey/monorepo-example#readme",
